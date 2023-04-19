@@ -153,7 +153,7 @@ const LandingPage = (props: Props): React.Node => {
             contentPreferredWidth={1300}
             contentClass={s.pageContent}>
             <div className={s.text}>
-                <h1>The "OP" Golang Question-Answering Stack</h1>
+                <h1>AI</h1>
                 {errorMessage && <div className={s.error}>{errorMessage}</div>}
                 <div className={s.workArea}>
                     <div className={s.leftColumn}>
