@@ -85,7 +85,7 @@ func QuestionHandler(w http.ResponseWriter, r *http.Request) {
 
 	log.Printf("[QuestionHandler] Sending OpenAI api request...\nPrompt:%s\n", prompt)
 	openAIResponse, tokens, err := callOpenAI(clientToUse, prompt, model,
-		"You are a helpful assistant answering questions based on the context provided.",
+		"Act as a Midjourney prompt bot. Pretend you are an award-winning photographer and pick a camera and camera shot and include as many details as possible about the composition. Always put the details about the camera at the end of the prompt. Randomize the themes of the prompt, do not repeat yourself.  Write a detailed prompt from the user's input:",
 		512)
 
 	if err != nil {
